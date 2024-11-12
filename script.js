@@ -1,4 +1,6 @@
-// Add event listener to the button
-document.getElementById('cta-button').addEventListener('click', function() {
-    alert('You clicked the button!');
+// JavaScript to handle "Add to Cart" functionality (optional feature for the store)
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Product added to cart!');
+    });
 });
