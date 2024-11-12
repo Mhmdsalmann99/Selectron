@@ -3,43 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Awesome Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Awesome Website</h1>
+        <div class="logo">
+            <h1>My Website</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to our website! Here we offer amazing products and services.</p>
-        </section>
+    <section class="hero">
+        <h2>Welcome to My Website</h2>
+        <p>We provide the best services. Let's get started!</p>
+        <button id="cta-button">Click Me!</button>
+    </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We provide top-notch service in electrical engineering and product sales.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email us at: contact@example.com</p>
-        </section>
-
-        <button onclick="showMessage()">Click Me!</button>
-        <p id="message"></p>
-    </main>
+    <section class="content">
+        <h2>About Us</h2>
+        <p>This is a brief section about the website and its purpose.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Awesome Website</p>
+        <p>&copy; 2024 My Awesome Website. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

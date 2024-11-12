@@ -1,3 +1,4 @@
-function showMessage() {
-    document.getElementById("message").textContent = "Hello! This is your interactive message.";
-}
+// Add event listener to the button
+document.getElementById('cta-button').addEventListener('click', function() {
+    alert('You clicked the button!');
+});
