@@ -3,72 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectron Electronics Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Selectron Electronics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <div class="logo">
-            <h1>Selectron</h1>
+            <h1>Selectron Electronics</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+    <a href="#categories">Categories</a>
+    <ul class="dropdown-content">
+        <li><a href="#lighting">Lighting</a></li>
+        <li><a href="#solar-panels">Solar Panels</a></li>
+        <li><a href="#inverters">Inverters</a></li>
+        <li><a href="#batteries">Batteries</a></li>
+        <li><a href="#circuit-breakers">Circuit Breakers</a></li>
+    </ul>
+</li>
+
+                <li><a href="#categories">Products</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <div class="hero-content">
-                <h2>Welcome to Selectron</h2>
-                <p>Your go-to place for the best electronics!</p>
-            </div>
-        </section>
+    <!-- Search Section -->
+    <div id="search">
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <button>🔍</button>
+    </div>
 
-        <section id="about" class="fadeIn">
-            <h2>About Us</h2>
-            <p>At Selectron, we offer a wide range of high-quality electrical and electronic products, from solar panels to circuit breakers. We’re dedicated to providing top-notch service and products that meet the highest standards.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to Selectron Electronics</h2>
+            <p>Your one-stop shop for all your electronic needs.</p>
+        </div>
+    </section>
 
-        <section id="products" class="product-list fadeIn">
-            <h2>Our Products</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300" alt="Product 1">
-                <h3>Solar Panel</h3>
-                <p>High-efficiency solar panel for residential and commercial use.</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300" alt="Product 2">
-                <h3>LED Lighting</h3>
-                <p>Energy-efficient LED lights to brighten your space.</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300" alt="Product 3">
-                <h3>Inverters</h3>
-                <p>Reliable inverters for all your energy needs.</p>
-            </div>
-        </section>
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <button>Lighting</button>
+            <button>Solar Panels</button>
+            <button>Inverters</button>
+            <button>Batteries</button>
+            <button>Circuit Breakers</button>
+        </div>
+    </section>
 
-        <section id="contact" class="fadeIn">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <input type="text" placeholder="Your Name" required><br>
-                <input type="email" placeholder="Your Email" required><br>
-                <textarea placeholder="Your Message" required></textarea><br>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <!-- Minimal Footer (no text) -->
+    <footer></footer>
 
-    <footer>
-        <p>&copy; 2024 Selectron Electronics</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
